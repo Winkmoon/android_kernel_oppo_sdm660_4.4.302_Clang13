@@ -1841,6 +1841,7 @@ static struct task_struct *copy_process(unsigned long clone_flags,
 	syscall_tracepoint_update(p);
 	write_unlock_irq(&tasklist_lock);
 
+	cgroup_post_fork(p);
 	proc_fork_connector(p);
 	sched_post_fork(p);
 	cgroup_post_fork(p, cgrp_ss_priv);
