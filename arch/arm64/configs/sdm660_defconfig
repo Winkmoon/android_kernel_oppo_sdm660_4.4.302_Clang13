@@ -930,3 +930,7 @@ CONFIG_CRYPTO_MANAGER2=y
 #/* Kui.Zhang@PSW.BSP.Kernel.Performance, 2018-11-07, add process reclaim.*/
 CONFIG_PROCESS_RECLAIM=y
 #endif
+
+##Apatch
+CONFIG_KALLSYMS=y
+CONFIG_KALLSYMS_ALL=y
